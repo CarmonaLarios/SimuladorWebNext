@@ -13,5 +13,35 @@ const nextConfig = {
       },
     ],
   },
+  async headers() {
+    return [
+      {
+        source: '/',
+        headers: [
+          {
+            key: 'X-Frame-Options',
+            value: 'ALLOW-FROM https://dominio-que-ira-incorporar.com/',
+          },
+        ],
+      },
+    ];
+  },
 };
 module.exports = nextConfig;
+
+// module.exports = {
+//   async headers() {
+//     return [
+//       {
+//         source: '/',
+//         headers: [
+//           {
+//             key: 'X-Frame-Options',
+//             value: 'ALLOW-FROM https://dominio-que-ira-incorporar.com/',
+//           },
+//         ],
+//       },
+//     ];
+//   },
+// };
+
