@@ -1,0 +1,15 @@
+.loading-overlay{
+    position: absolute;
+    background: rgba(255,255,255,0.4);
+    top:0;
+    left:0;
+    width:100%;
+    height: calc(100vh - 210px);
+    color:red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius:40px;
+    z-index:100;
+}

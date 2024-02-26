@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+:root {
+  --color-site-primary: #5451fb;
+  --color-site-secondary: #3A4256;
+  --color-site-complement-1: #f8f9fa;
+  --color-site-complement-2: #5451fb;
+  --color-site-complement-3: #ff8182;
+  --color-site-black: #000000;
+  --color-site-gray: #6c7076;
+  --color-site-blue: #5451fb;
+  --color-site-red: #e00000;
+}
+
+html{
+  scroll-behavior: smooth;
+  height:100%;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+a{
+  text-decoration:none;
+}
+video{
+  border-radius:8px;
+}
+.links{
+  color:var(--color-site-primary);
+}
+.links:hover{
+  text-decoration:underline;
+}
+.textuppercase{
+  text-transform:uppercase;
+}
+.img-banner{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: contain;
+  object-position: 47% bottom;
+  color: transparent;
+}
+.text-banner{
+  margin-top:230px;
+  max-width:500px;
+}
+.box-out-rounded{background-color: rgba(255, 255, 255, 1); padding: 20px 10px; border-radius: 40px;height: calc(100vh - 150px);z-index: 1;position: relative; width: 100%; max-width: 480px;}
+
+.box-limit {
+  width: 100%;
+  background-color: transparent;
+    height: -webkit-fill-available;
+    overflow: hidden;overflow-x: hidden;overflow-y: scroll;
+    top: 0;right: 0;z-index: 2;
+    position: relative;
+  scrollbar-width: auto; 
+  scrollbar-color: rgba(0, 0, 0, 0.07);
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    left: -50px;
+    position: absolute;
+    
+  }
+  &::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    border: none;
+
+  }
+}
+
+
+.box-limit .MuiPaper-root {width: 100%; background-color: transparent; }
+
+@media (min-width: 1401px) and (max-width: 1600px) {
+  .box-out-rounded{
+    height: calc(100vh - 100px)
+  }
+  .text-banner{
+    margin-top:180px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1400px) {
+  .box-out-rounded{
+    height: calc(100vh - 70px)
+  }
+  .text-banner{
+    margin-top:170px;
+  }
+}
+/* 1280 x 720 px */
+@media (min-width: 768px) and (max-width: 1280px) {
+  .box-out-rounded{
+    height: calc(100vh - 100px);
+    max-width: 440px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .text-banner{
+    display:none;
+  }
+  .text-banner h1{
+    font-size:2rem;
+  }
+  .img-banner{
+    display:none;
+  }
+  .box-out-rounded{
+    height:100vh ;
+    border-radius:0;
+  }
+
+}
+
+
+

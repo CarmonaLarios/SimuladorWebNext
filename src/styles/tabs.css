@@ -1,0 +1,30 @@
+
+.MuiToggleButtonGroup-grouped img{
+    max-width: 60px;
+    height: 37px;
+    width:auto;
+}
+.MuiToggleButtonGroup-grouped {
+    margin: 0;
+    border-radius: 8px;
+    border:none;
+    text-transform:none;
+}
+.selectsimulacao {
+    padding:0;
+}
+.selectsimulacao button{
+    width:50%;
+    font-weight:700;
+}
+
+button .Mui-selected{
+    background-color:#5451FA;
+    color:#fff
+}
+
+.MuiSlider-root{
+    padding:10px 0;
+}
+
+
